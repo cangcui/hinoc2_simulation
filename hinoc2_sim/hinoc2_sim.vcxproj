@@ -60,18 +60,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="core\basic_queue.c" />
     <ClCompile Include="core\core_event.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="map.c" />
-    <ClCompile Include="queue_mng.c" />
+    <ClCompile Include="queue\basic_queue.c" />
+    <ClCompile Include="queue\queue_mng.c" />
     <ClCompile Include="sys_stat.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="core\basic_queue.h" />
     <ClInclude Include="core\core_event.h" />
     <ClInclude Include="map.h" />
-    <ClInclude Include="queue_mng.h" />
+    <ClInclude Include="queue\basic_queue.h" />
+    <ClInclude Include="queue\queue_mng.h" />
     <ClInclude Include="sys_stat.h" />
     <ClInclude Include="user_setting.h" />
   </ItemGroup>

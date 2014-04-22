@@ -12,8 +12,8 @@
 //--------------------
 //头文件
 //--------------------
-# include "core\basic_queue.h"
 # include "core\core_event.h"
+# include "queue\basic_queue.h"
 
 //--------------------
 //hinoc1.0仿真相关宏定义
