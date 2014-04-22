@@ -41,6 +41,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -62,16 +63,16 @@
   <ItemGroup>
     <ClCompile Include="core\core_event.c" />
     <ClCompile Include="main.c" />
-    <ClCompile Include="map.c" />
     <ClCompile Include="queue\basic_queue.c" />
     <ClCompile Include="queue\queue_mng.c" />
+    <ClCompile Include="schedule\map.c" />
     <ClCompile Include="sys_stat.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="core\core_event.h" />
-    <ClInclude Include="map.h" />
     <ClInclude Include="queue\basic_queue.h" />
     <ClInclude Include="queue\queue_mng.h" />
+    <ClInclude Include="schedule\map.h" />
     <ClInclude Include="sys_stat.h" />
     <ClInclude Include="user_setting.h" />
   </ItemGroup>

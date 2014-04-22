@@ -25,12 +25,15 @@
     <Filter Include="源文件\queue">
       <UniqueIdentifier>{b2383e61-9f4e-4614-942b-932bbd528294}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\schedule">
+      <UniqueIdentifier>{f7ba41d8-ed15-45ab-9b27-df4f8aa9752b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\schedule">
+      <UniqueIdentifier>{c49f7a6f-8fb6-410d-9a5e-29a700d9fefb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="map.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="sys_stat.c">
@@ -45,11 +48,11 @@
     <ClCompile Include="queue\queue_mng.c">
       <Filter>源文件\queue</Filter>
     </ClCompile>
+    <ClCompile Include="schedule\map.c">
+      <Filter>源文件\schedule</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="map.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="sys_stat.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -64,6 +67,9 @@
     </ClInclude>
     <ClInclude Include="queue\queue_mng.h">
       <Filter>头文件\queue</Filter>
+    </ClInclude>
+    <ClInclude Include="schedule\map.h">
+      <Filter>头文件\schedule</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
