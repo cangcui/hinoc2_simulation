@@ -61,7 +61,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="core\basic_queue.c" />
-    <ClCompile Include="core\calendar_scheduler.c" />
+    <ClCompile Include="core\core_event.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="map.c" />
     <ClCompile Include="queue_mng.c" />
@@ -69,7 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="core\basic_queue.h" />
-    <ClInclude Include="core\calendar_scheduler.h" />
+    <ClInclude Include="core\core_event.h" />
     <ClInclude Include="map.h" />
     <ClInclude Include="queue_mng.h" />
     <ClInclude Include="sys_stat.h" />

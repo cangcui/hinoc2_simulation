@@ -13,7 +13,7 @@
 //头文件
 //--------------------
 # include "core\basic_queue.h"
-# include "core\calendar_scheduler.h"
+# include "core\core_event.h"
 
 //--------------------
 //hinoc1.0仿真相关宏定义

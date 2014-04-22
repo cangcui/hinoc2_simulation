@@ -36,7 +36,7 @@
     <ClCompile Include="core\basic_queue.c">
       <Filter>源文件\core</Filter>
     </ClCompile>
-    <ClCompile Include="core\calendar_scheduler.c">
+    <ClCompile Include="core\core_event.c">
       <Filter>源文件\core</Filter>
     </ClCompile>
   </ItemGroup>
@@ -56,7 +56,7 @@
     <ClInclude Include="core\basic_queue.h">
       <Filter>头文件\core</Filter>
     </ClInclude>
-    <ClInclude Include="core\calendar_scheduler.h">
+    <ClInclude Include="core\core_event.h">
       <Filter>头文件\core</Filter>
     </ClInclude>
   </ItemGroup>
