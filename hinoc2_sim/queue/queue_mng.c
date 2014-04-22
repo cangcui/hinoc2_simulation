@@ -10,7 +10,7 @@
 //头文件
 //--------------------
 # include "queue_mng.h"
-
+#include "../user_setting.h"
 //--------------------
 //全局参数
 //--------------------
@@ -24,6 +24,14 @@ static Queue to_be_received_down_queue[HM_NUM][PRIO_NUM];
 Queue received_up_queue[HM_NUM][PRIO_NUM];
 Queue received_down_queue[HM_NUM][PRIO_NUM];
 
+//HM
+HinocQueue hm_packed_queue;
+
+//HM
+HinocQueue hm_sending_queue;
+
+//HB
+HinocQueue hb_packed_queue;
 
 void enqueue_up(Event *e)
 {
