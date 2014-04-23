@@ -65,15 +65,17 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="queue\basic_queue.c" />
     <ClCompile Include="queue\queue_mng.c" />
+    <ClCompile Include="schedule\schedule_interface_common.c" />
     <ClCompile Include="schedule\map.c" />
-    <ClCompile Include="sys_stat.c" />
+    <ClCompile Include="statistic\sys_stat.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="core\core_event.h" />
     <ClInclude Include="queue\basic_queue.h" />
     <ClInclude Include="queue\queue_mng.h" />
+    <ClInclude Include="schedule\schedule_interface_common.h" />
     <ClInclude Include="schedule\map.h" />
-    <ClInclude Include="sys_stat.h" />
+    <ClInclude Include="statistic\sys_stat.h" />
     <ClInclude Include="user_setting.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

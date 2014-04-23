@@ -31,12 +31,15 @@
     <Filter Include="源文件\schedule">
       <UniqueIdentifier>{c49f7a6f-8fb6-410d-9a5e-29a700d9fefb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\statistic">
+      <UniqueIdentifier>{1cffbac1-e23c-4801-98a6-2c4c31575ad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\statistic">
+      <UniqueIdentifier>{23d23545-7d83-49cf-bfe6-4ddc116c7b83}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="sys_stat.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="core\core_event.c">
@@ -51,11 +54,14 @@
     <ClCompile Include="schedule\map.c">
       <Filter>源文件\schedule</Filter>
     </ClCompile>
+    <ClCompile Include="statistic\sys_stat.c">
+      <Filter>源文件\statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="schedule\schedule_interface_common.c">
+      <Filter>源文件\schedule</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="sys_stat.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="user_setting.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -69,6 +75,12 @@
       <Filter>头文件\queue</Filter>
     </ClInclude>
     <ClInclude Include="schedule\map.h">
+      <Filter>头文件\schedule</Filter>
+    </ClInclude>
+    <ClInclude Include="statistic\sys_stat.h">
+      <Filter>头文件\statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="schedule\schedule_interface_common.h">
       <Filter>头文件\schedule</Filter>
     </ClInclude>
   </ItemGroup>
