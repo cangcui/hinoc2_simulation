@@ -14,10 +14,6 @@
 //--------------------
 //全局参数
 //--------------------
-char *packet_up_path[HM_NUM][PRIO_NUM] = {{"123.txt"}};
-char *packet_down_path[HM_NUM][PRIO_NUM] = {NULL};
-Queue orgin_up_queue[HM_NUM][PRIO_NUM];
-Queue orgin_down_queue[HM_NUM][PRIO_NUM];
 
 //--------------------
 //名称：数据包载入

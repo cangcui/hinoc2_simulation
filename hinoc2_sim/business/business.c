@@ -79,12 +79,12 @@ static void gen_CUSTOM_bussiness()
 	int hm_id = 0;
 	int prio_id = 0;
 
-	for (hm_id = 0; hm_id < HM_NUM; hm_id++)
+	for (hm_id = 0; hm_id < global_hb_node->related_hm_nums; hm_id++)
 	{
 		for (prio_id = 0; prio_id < PRIO_NUM; prio_id++)
 		{
-			gen_CUSTOM_queue("./custom.txt", &(hm_node[hm_id].hm_queue.orign_queue[UP][prio_id]), hm_id, prio_id);
-			gen_CUSTOM_queue("./custom.txt", &((*hb_node).hb_queue.orign_queue[hm_id][UP][prio_id]), hm_id, prio_id);
+			gen_CUSTOM_queue("./custom.txt", &(global_hm_nodes[hm_id].hm_queue.origin_queue[UP][prio_id]), hm_id, prio_id);
+			gen_CUSTOM_queue("./custom.txt", &(global_hb_node->hb_queue.origin_queue[hm_id][UP][prio_id]), hm_id, prio_id);
 		}
 	}
 	

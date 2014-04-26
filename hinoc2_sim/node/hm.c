@@ -1,25 +1,31 @@
+#include <assert.h>
 #include "hm.h"
 
-HM_Node *hm_node;
-
-HM_Node *gen_hm_nodes(int hm_num)
-{
-	
+//输入的参数：hm的个数
+HM_Node *gen_hm_nodes(int hm_nums)
+{	
 	int hm_id=0;
 	int updown=0;
 	int prio_id=0;
 	// 根据HM个数动态开辟HM_NODE
-	HM_Node *hm_nodes = (HM_Node *)malloc(hm_num*sizeof(HM_Node));
-	// 初始化每个HM的对头信息
-	for(hm_id=0; hm_id < hm_num; hm_id++)
-		for(updown=0; updown<2; updown++)
-			for(prio_id=0; prio_id<PRIO_NUM; prio_id++)
-			{
-				// TODO: memset优化
-				memset(&(hm_nodes[hm_id].hm_queue.orign_queue[updown][prio_id]), 0 ,sizeof(Queue));
-				memset(&(hm_nodes[hm_id].hm_queue.cache_queue[updown][prio_id]), 0 ,sizeof(Queue));
-				memset(&(hm_nodes[hm_id].hm_queue.sending_queue[updown][prio_id]), 0 ,sizeof(Queue));
-				memset(&(hm_nodes[hm_id].hm_queue.received_queue[updown][prio_id]), 0 ,sizeof(Queue));
-			}
+	HM_Node *hm_nodes = (HM_Node *)malloc(hm_nums * sizeof(HM_Node));
+	assert(hm_nodes != NULL);
+	memset(hm_nodes,0,hm_nums * sizeof(HM_Node));
+	
+	//初始化每个Hm的队列信息
+	for(hm_id = 0;hm_id < hm_nums; hm_id++)
+	{
+		memset(&(hm_nodes[hm_id].hm_queue),0,sizeof(HMQueue));
+	}
+
+
 	return hm_nodes;
+}
+
+//释放生成的hm节点
+void free_hm_nodes(HM_Node *tar_nodes,int hm_nums)
+{
+
+	//最后一步：释放节点
+	free(tar_nodes);
 }

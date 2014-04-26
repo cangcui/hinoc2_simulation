@@ -17,10 +17,7 @@
 //------------------------
 //全局声明
 //------------------------
-extern char *packet_up_path[HM_NUM][PRIO_NUM];
-extern char *packet_down_path[HM_NUM][PRIO_NUM];
-extern Queue orgin_up_queue[HM_NUM][PRIO_NUM];
-extern Queue orgin_down_queue[HM_NUM][PRIO_NUM];
+
 
 //------------------------
 //函数声明

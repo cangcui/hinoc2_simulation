@@ -3,11 +3,10 @@
 #include "schedule/map.h"
 #include "business/business.h"
 #include "node/hm.h"
-//生成pd帧和pu帧等永远不变的事件
-static int init_static_events()
-{
-	return 0;
-}
+
+HB_Node *global_hb_node;		//提供给全局的节点接口
+HM_Node *global_hm_nodes;		//提供给全局的节点接口
+
 
 //生成固定的事件
 static void init()
@@ -16,8 +15,6 @@ static void init()
 	//设置仿真时长
 	set_time(65536);
 
-	//生成pd帧和pu帧等永远不变的事件
-	init_static_events();
 
 	//Map帧初始化
 	init_map();
@@ -29,8 +26,10 @@ static void init()
 
 int simulation(int argc, const char **argv)
 {
-	hm_node=gen_hm_nodes(64);
-	hb_node=gen_hb_node(64);
+	int hm_nums	=	64;					//要生成的hm节点的个数，hb节点默认为1个
+
+	global_hm_nodes	=	gen_hm_nodes(hm_nums);
+	global_hb_node	=	gen_hb_node(hm_nums);
 
 
 	//初始化
@@ -39,5 +38,6 @@ int simulation(int argc, const char **argv)
 	run();
 	//统计分析
 	//statistic();
+
 	return 0;
 }
