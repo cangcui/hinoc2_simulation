@@ -61,22 +61,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="business\business.c" />
+    <ClCompile Include="business\custom_bussiness.c" />
     <ClCompile Include="core\core_event.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="node\hb.c" />
+    <ClCompile Include="node\hm.c" />
     <ClCompile Include="queue\basic_queue.c" />
     <ClCompile Include="queue\queue_mng.c" />
     <ClCompile Include="schedule\schedule_interface_common.c" />
     <ClCompile Include="schedule\map.c" />
+    <ClCompile Include="simulation.c" />
     <ClCompile Include="statistic\sys_stat.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="business\business.h" />
+    <ClInclude Include="business\custom_bussiness.h" />
     <ClInclude Include="core\core_event.h" />
+    <ClInclude Include="core\log.h" />
+    <ClInclude Include="node\hb.h" />
+    <ClInclude Include="node\hm.h" />
     <ClInclude Include="queue\basic_queue.h" />
     <ClInclude Include="queue\queue_mng.h" />
     <ClInclude Include="schedule\schedule_interface_common.h" />
     <ClInclude Include="schedule\map.h" />
+    <ClInclude Include="simulation.h" />
     <ClInclude Include="statistic\sys_stat.h" />
     <ClInclude Include="user_setting.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="custom.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

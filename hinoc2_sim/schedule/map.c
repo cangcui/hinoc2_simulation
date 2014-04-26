@@ -11,3 +11,8 @@
 //---------------------
 # include "map.h"
 
+int init_map(/*Map_Frame *map*/)
+{
+	return 0;
+}
+

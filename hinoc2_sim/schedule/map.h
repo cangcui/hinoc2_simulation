@@ -12,5 +12,6 @@
 # include "../user_setting.h"
 
 //--------------------------
+int init_map(/*Map_Frame *map*/);
 
 # endif

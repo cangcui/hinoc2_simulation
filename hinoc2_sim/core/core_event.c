@@ -394,11 +394,11 @@ void run(void)
 {
 	Event *e = NULL;
 
-	//有事件，并且未到终止时刻
+	//上一个事件未到终止时刻 且 有事件
 	while ((now_time <= stop_time) && (e = deque()))	
 		dispatch(e);
 
-	printf("it is finish!\n");
+	printf("Simulation Finished.\n");
 }
 
 //-------------------------

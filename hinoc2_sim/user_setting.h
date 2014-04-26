@@ -40,12 +40,6 @@ typedef struct PATH {
 	char *(*down_path_ptr)[PRIO_NUM];
 }Path;
 
-//队列参数
-typedef struct HINCO_QUEUE {
-	Queue (*up_queue)[PRIO_NUM];
-	Queue (*down_queue)[PRIO_NUM];
-}HinocQueue;
-
 //HINOC帧扩展信息
 typedef struct FRAME_INFO {
 	int gen_time;		//帧生成开始时间

@@ -37,6 +37,18 @@
     <Filter Include="头文件\statistic">
       <UniqueIdentifier>{23d23545-7d83-49cf-bfe6-4ddc116c7b83}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\node">
+      <UniqueIdentifier>{8dcbf24f-3fc0-469c-b204-c7bbd4f115f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\node">
+      <UniqueIdentifier>{39adb455-ddd1-46e1-b3cf-d91e3e5b407b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\business">
+      <UniqueIdentifier>{b2d60955-1aab-4f58-b841-eb10d65239ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\business">
+      <UniqueIdentifier>{c829fa52-c79d-41fb-b238-9515e1048842}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -44,9 +56,6 @@
     </ClCompile>
     <ClCompile Include="core\core_event.c">
       <Filter>源文件\core</Filter>
-    </ClCompile>
-    <ClCompile Include="queue\basic_queue.c">
-      <Filter>源文件\queue</Filter>
     </ClCompile>
     <ClCompile Include="queue\queue_mng.c">
       <Filter>源文件\queue</Filter>
@@ -59,6 +68,24 @@
     </ClCompile>
     <ClCompile Include="schedule\schedule_interface_common.c">
       <Filter>源文件\schedule</Filter>
+    </ClCompile>
+    <ClCompile Include="simulation.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="queue\basic_queue.c">
+      <Filter>源文件\queue</Filter>
+    </ClCompile>
+    <ClCompile Include="node\hb.c">
+      <Filter>源文件\node</Filter>
+    </ClCompile>
+    <ClCompile Include="node\hm.c">
+      <Filter>源文件\node</Filter>
+    </ClCompile>
+    <ClCompile Include="business\business.c">
+      <Filter>源文件\business</Filter>
+    </ClCompile>
+    <ClCompile Include="business\custom_bussiness.c">
+      <Filter>源文件\business</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -83,5 +110,28 @@
     <ClInclude Include="schedule\schedule_interface_common.h">
       <Filter>头文件\schedule</Filter>
     </ClInclude>
+    <ClInclude Include="simulation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="node\hb.h">
+      <Filter>头文件\node</Filter>
+    </ClInclude>
+    <ClInclude Include="node\hm.h">
+      <Filter>头文件\node</Filter>
+    </ClInclude>
+    <ClInclude Include="business\business.h">
+      <Filter>头文件\business</Filter>
+    </ClInclude>
+    <ClInclude Include="core\log.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="business\custom_bussiness.h">
+      <Filter>头文件\business</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="custom.txt">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>
